@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    display: flex;    
+}
+
+.map{
+    height: 100vh;
+    width: 70%;   
+    background-color: red; 
+}
+
+.specific{
+    position: relative;
+    /* background-color:rgb(79, 116, 175); */
+    background: linear-gradient(rgb(65, 126, 134),rgb(246, 247, 248));
+    width: 30%;
+}
+
+.box{
+    position: absolute;
+    /* border-top: 2px solid  #eee;
+    border-bottom: 2px solid  #eee;       */
+    /* background-color: white ; */
+    top: 20vh;
+    width: 100%;
+    height: 60vh;
+}
+
+.coutry-label{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flag-img{    
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.details{
+    margin-top: 20px;        
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;    
+}
