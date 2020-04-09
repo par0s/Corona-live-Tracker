@@ -67,9 +67,10 @@ p{
     justify-content: center;
 }
 
-.pop li{
+.pop ul li{
     text-decoration: none;
     color: black;
+    font-size: 1.4em;
 }
 
 #el{

@@ -41,13 +41,18 @@ document.getElementById('numbers2').innerHTML = `<p>${world_died}</p>`;
     for(let i = 0; i < 255; i ++){
       let latitude = data.locations[i].coordinates.latitude
       let longitude = data.locations[i].coordinates.longitude  
-      let country_name = data.locations[i].country
+      let country_name = data.locations[i].province
+
+      if(country_name === ""){
+        country_name = data.locations[i].country;
+      }
+
       let news_feed = data.locations[i].latest
       let confirmed = data.locations[i].latest.confirmed
       let deaths = data.locations[i].latest.deaths
       let news_pop = `<p class = "pop"> 
                     <ul> 
-                    <li> Country - ${country_name} </li>
+                    <li> Place - ${country_name} </li>
                     <li> Confirmed - ${confirmed} </li>
                     <li> Deaths - ${deaths} </li>
                     </ul></p>`
@@ -69,13 +74,4 @@ document.getElementById('numbers2').innerHTML = `<p>${world_died}</p>`;
       }          
     }
   });
-
-
-//getting the current location of the user
-if (navigator.geolocation) { //check if geolocation is available
-    navigator.geolocation.getCurrentPosition(function(position){
-        let lat = position.coords.latitude;
-        let long = position.coords.longitude;         
-    });
-}   
-
+gi
