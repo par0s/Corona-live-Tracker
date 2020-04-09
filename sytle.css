@@ -61,7 +61,18 @@ p{
     padding: 10px;    
 }
 
-#id{
+.pop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop li{
+    text-decoration: none;
+    color: black;
+}
+
+#el{
     color: blue;
     background-color: brown;
 }
